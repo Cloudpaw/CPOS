@@ -44,21 +44,15 @@ end
 
 function displaySystemNoSupport()
 	--add a message saying that the display has been moved to monitor
-	screensizex, screensizey = term.getSize()
-	line = screensizey/2-2
-	PrintCentered("This computer is not supported.",line)
-	line = line + 1
-	PrintCentered("------------------------------",line)
-	line = line + 2
-	PrintCentered("PearOS requires an 'Advanced Computer' to run.",line)
-	line = line + 1
-	PrintCentered("Use an Advanced Computer and try again.",line)
-	line = line + 3
-
-	PrintCentered("Press any key to restore CraftOS", line)
+    term.setBackgroundColor(colors.blue)
+	term.setTextColor(colors.white)
+	term.clear()
+	PrintCentered("CPOS Threshold",8)
+	PrintCentered("A fatal error has occurred",9)
+	PrintCentered("A basic computer was found.",10)
+	PrintCentered("Please use CPOS on a Advanced Computer",11)
+	PrintCentered("Press any key to boot CraftOS")
 	os.pullEventRaw()
-	term.setBackgroundColor(colours.black)
-	term.setTextColor(colours.white)
 	term.clear()
 	term.setCursorPos(1,1)
 	print(os.version())
@@ -126,7 +120,7 @@ term.setBackgroundColor(colors.black)
 term.setTextColor(colors.yellow)
 term.clear()
 term.setCursorPos(1,1)
-print(os.version() .. " (Opened via PearOS)")
+print(os.version() .. " (Opened via CPOS Threshold)")
 return nil
 end
 
@@ -196,7 +190,7 @@ while wait do
 	term.write("$ ")
 	local command = io.read()
 	if command == "exit" then
-		print("Starting PearOS...")
+		print("Starting CPOS Threshold...")
 		wait = false
 	else
 --		commands = split("hello , " ")
@@ -210,16 +204,16 @@ end
 	term.setBackgroundColor(colors.white)
 	term.setTextColor(colors.lightGray)
 	term.clear()
-	logo = paintutils.loadImage("System/Library/Interface/PearLogo")
+	logo = paintutils.loadImage("System/Library/Interface/CPOSLogo")
 	local logox, logoy = term.getSize()
 	paintutils.drawImage(logo,logox/2-3,logoy/2-3)
 
-	shell.run("System/PearOS.lua")
+	shell.run("System/CPOS.lua")
 
 
 if verbose then
     term.setTextColor(colors.black)
-    text = "Starting PearOS in verbose (debug) mode."
+    text = "Starting CPOS Threshold in verbose (debug) mode."
     local screensizex, screensizey = term.getSize()
     PrintCentered(text,screensizey/2+6)
     init()
@@ -232,12 +226,12 @@ local ok, err = pcall(init)
 if not ok then
 	--an error has occurred, display a warning message
 	
-	term.setBackgroundColor(colors.gray)
+	term.setBackgroundColor(colors.blue)
 	term.setTextColor(colors.white)
 	term.clear()
-	PrintCentered("Oh noes!",7)
-	PrintCentered("PearOS or a running application has crashed.",9)
-	PrintCentered("Click anywhere or press any key to reboot.",10)
+	PrintCentered("CPOS Threshold",8)
+	PrintCentered("A fatal error has occurred",9)
+	PrintCentered("Press any key to reboot.",10)
 	--PrintCentered("For help hold 'H' while booting.",11)
 	PrintCentered("For a more detailed error hold 'V' while booting.",12)
 

@@ -29,7 +29,7 @@
 		if page == 1 then
 			firstRunWindow.entities = {
 				OSButton:new(3,15 ,"Shutdown", function() os.shutdown() end),
-				OSLabel:new(3,2 ,"Welcome to PearOS"),
+				OSLabel:new(3,2 ,"Welcome to CPOS Threshold"),
 				OSHSplitter:new(1, 3, 47, true),
 				OSLabel:new(3,5 ,"This guide will help you get up and"),
 				OSLabel:new(3,6 ,"running as quick as possible."),
@@ -41,7 +41,7 @@
 				OSButton:new(3,15 ,"Back", function() self:changePage(page - 1) end),
 				OSLabel:new(3,2 ,"Are you new?"),
 				OSHSplitter:new(1, 3, 47, true),
-				OSLabel:new(3,5 ,"Have you used PearOS before?"),
+				OSLabel:new(3,5 ,"Have you used CPOS Threshold before?"),
 				OSLabel:new(3,7 ,"This will help us determine how to set up"),
 				OSLabel:new(3,8 ,"your computer and whether you need to be"),
 				OSLabel:new(3,9 ,"shown how to use it."),
@@ -192,7 +192,7 @@
 				OSLabel:new(3,2 ,"Automatic updates?"),
 				OSHSplitter:new(1, 3, 47, true),
 				OSLabel:new(3, 5 ,"Do you want to enabled automatic updates?"),
-				OSLabel:new(3, 7 ,"If enabled, PearOS will update it self to"),
+				OSLabel:new(3, 7 ,"If enabled, CPOS Threshold will update it self to"),
 				OSLabel:new(3, 8 ,"the latest version when ever possible."),
 				OSLabel:new(3, 10,"However, this requires the 'http' API"),
 				OSLabel:new(3, 11,"to be enabled. (current ".. (http and "enabled" or "not enabled") ..")."),
@@ -207,8 +207,8 @@
 				OSButton:new(3,15 ,"Back", function() self:changePage(page - 1) end),
 				OSLabel:new(3,2 ,"All Done!"),
 				OSHSplitter:new(1, 3, 47, true),
-				OSLabel:new(3, 5 ,"PearOS setup is complete!"),
-				OSLabel:new(3, 7 ,"To begin using PearOS click 'Restart'"),
+				OSLabel:new(3, 5 ,"CPOS Threshold setup is complete!"),
+				OSLabel:new(3, 7 ,"To begin using CPOS Threshold click 'Restart'"),
 
 				OSButton:new(36,15 ,"Restart", function() saveSettings() os.reboot() end),
 				

@@ -2,7 +2,7 @@
 	windows = {}
 	version = "1"
 	id = 0
-	name = "TextEdit"
+	name = "Notes"
 	author = "Oliver'oeed'Cooper"
 
 	init = function()

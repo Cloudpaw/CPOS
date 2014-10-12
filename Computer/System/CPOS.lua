@@ -1,22 +1,25 @@
 --[[
 
-													      #
-													     #
+                     \`*-.                    
+                      )  _`-.                 
+                     .  : `. .                
+                     : _   '  \               
+                     ; *` _.   `*-._          
+                     `-.-'          `-.       
+                       ;       `       `.     
+                       :.       .        \    
+                       . \  .   :   .-'   .   
+                       '  `+.;  ;  '      :   
+                       :  '  |    ;       ;-. 
+                       ; '   : :`-:     _.`* ;
+                    .*' /  .*' ; .*`- +'  `*' 
+                    `*-*   `*-*  `*-*'        
 
-													    ###
-													   #####
-													   #####
-													 #########
-													##########
-													#########
-													##########
-													 #########
+					CPOS
+					1.0
 
-													  PearOS
-													 Preview 2
-
-PearOS by Oliver 'oeed' Cooper.
-PearOS is released under Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0) License
+Based on PearOS by Oliver 'oeed' Cooper.
+CPOS is released under Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0) License 
 
 In simple terms this means that...
 
@@ -172,8 +175,8 @@ function include(_sDir)
 	end
 end
 
-OSVersion = 0.2
-OSVersionLong = "Preview 2"
+OSVersion = 0.1
+OSVersionLong = "CPOS Threshold"
 
 OSCurrentWindow = nil --the window in focus
 OSSelectedEntity = nil
