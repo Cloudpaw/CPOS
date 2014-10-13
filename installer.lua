@@ -1,7 +1,7 @@
 md = fs.makeDir
 ts = textutils.slowPrint
 sr = shell.run
-re = os.reboot()
+re = os.reboot
 ts("Installer for CPOS Threshold")
 ts("Version 0.1 Public Preview")
 ts("============================")
@@ -91,4 +91,4 @@ sr("package", "https://raw.githubusercontent.com/Cloudpaw/CPOS/master/Computer/H
 sr("package", "https://raw.githubusercontent.com/Cloudpaw/CPOS/master/Computer/Settings", "Computer/Settings")
 ts("CPOS is now done installing!")
 ts("This computer will reboot ....................... now")
-re
+re()
